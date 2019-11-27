@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const StartButton = (props) =>  {
-
+const StartButton = () => {
     return (
-        <button onClick={props.handleClick}>
-            start game
+        <button>
+            <Link to="/about">
+                start game
+            </Link>
         </button>
     )
 
